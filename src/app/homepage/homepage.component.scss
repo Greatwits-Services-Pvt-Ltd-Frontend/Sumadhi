@@ -15,11 +15,11 @@
 
 
 
-// h1{
-//     font-size: 40px;
-//     font-style: italic;
-//     margin-top: 20px;
-// }
+h1{
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 20px;
+}
 
 
 .wrapper{
@@ -30,55 +30,44 @@
     }
 }
 
-.carousel-caption{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 70px;
-  animation:carousel-caption  25s linear infinite;
-}
+// ------------------------------------------
 
-.carousel-caption:hover{
-  text-transform: lowercase;
-  
-}
+.free-trail-paraline {
+  background-color: rgb(236, 227, 227);
+  text-align: center;
+  font-size: 27px;
 
-@media (max-width: 442px){
-.carousel-caption{
-  font-size: 30px;
-}
-}
-
-@keyframes carousel-caption{
-0% {
-  transform: translate(0, 20);
-} 100% {
-  transform: translate(-100%, 0);    
-}
-}
-
-
-
-
-// ----------------------------------------------
-
-.image{
-    background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-size: cover; background-position: center center; width: 100%; height: 100%; visibility: inherit; opacity: 1;
-}
-
-.free-trail-para{
+  margin-top: 20px;
+  height: 40px;
+  // justify-content: center;
+    // margin-top: 30px;
+    // margin-bottom: 20px;
     // border: 2px solid black;
-    text-align: center;
+}
+
+
+
+@media (max-width:946px) {
+  .free-trail-paraline {
+    height: 80px;
     background-color: rgb(236, 227, 227);
-    // margin-top: ;
-    font-size: 30px;
+  }
 }
-
-.free-trail-paraline{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 // ------------------------------------------------------
 
+
+
+.flex-item-left-image  img{
+  width: 370px;
+}
+
+.flex-item-right-image  img{
+  width: 370px;
+}
+
+.flex-item-end-image  img{
+  width: 370px;
+}
 
 .flex-container {
     display: flex;
@@ -92,13 +81,15 @@ font-size: 70px;
     padding: 10px;
     flex: 50%;
     height: 550px;
+    // margin: 17px;
   }
   
   .flex-item-right {
     // background-color: dodgerblue;
     padding: 10px;
     flex: 50%;
-    height: 550px;
+    height: 550px; 
+    // margin: 17px;
   }
 
 
@@ -106,7 +97,8 @@ font-size: 70px;
     // background-color: rgb(30, 255, 60);
     padding: 10px;
     flex: 50%;
-    height: 550px;
+    height: 550px; 
+    // margin: 17px;
   }
 
 
@@ -115,52 +107,21 @@ font-size: 70px;
     .flex-container {
       flex-direction: column;
     }
+    .flex-item-left-image img{
+      width: 100%;
+      height: 300px;
+    }
+    .flex-item-right-image img{
+      width: 100%;
+      height: 300px;
+    }
+    .flex-item-end-image img{
+      width: 100%;
+      height: 300px;
+    }
   }
 
 // ------------------------------------------------------------------------------
-
-
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  .flex-item-left {
-    // background-color: #f1f1f1;
-    padding: 10px;
-    flex: 50%;
-    height: 550px;
-  }
-  
-  .flex-item-right {
-    // background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
-  }
-
-
-  .flex-item-end {
-    // background-color: rgb(30, 255, 60);
-    padding: 10px;
-    flex: 50%;
-  }
-
-  .flex-item-lastend {
-    background-color: rgb(170, 55, 61);
-    padding: 10px;
-    flex: 50%;
-  }
-
-
-
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
 
 // ---------------------------------------------------
 
@@ -173,14 +134,14 @@ font-size: 70px;
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
-    background-color: rgb(219, 215, 215);
+    // background-color: rgb(219, 215, 215);
   }
   
   .flex-item-left3 {
     // background-color: #f1f1f1;
     padding: 10px;
     flex: 50%;
-    height: 500px;
+    height: 300px;
   }
   
   .flex-item-right3 {
@@ -204,8 +165,85 @@ font-size: 70px;
 
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 1180px) {
     .flex-container3 {
       flex-direction: column;
     }
   }
+// ----------------------------------------------
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
