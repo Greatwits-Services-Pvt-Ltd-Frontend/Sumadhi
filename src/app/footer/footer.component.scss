@@ -1,74 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
-    padding: 0;
-    margin: 0;
-    // color: #fff;
-    box-sizing: border-box;
-    // font-family: 'Poppins', sans-serif;
-    // border: none;
-}
-body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
-.footer-area{
-    margin-top: 100px;
-    padding: 100px 0;
-}
-.main{
-    width: 1200px;
-    margin: 0 auto;
-}
-.footer{
+
+body{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ede7f6;
+}
+footer{
+    height: auto;
+    position: relative;
+    width: 100%;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container{
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.footer-social a{
-    color: #333;
-    border:1ipx solid #333;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+footer .container .sec{
+    margin-right: 30px;
 }
-.footer-social{
-    margin-top: 10px;
+
+footer .container .sec.aboutus{
+    width: 40%;
 }
-.single-footer{
-    width: 230px;
+footer .container  .sec.quicklinks h2{
+    color:rgb(15, 179, 179); }
+footer .container  .sec.contact h2{
+    color:rgb(15, 179, 179); 
 }
-.single-footer:first-child{
-    width: 400px;
+footer .container  .sec.aboutus h2{
+    position: relative;
+    color:rgb(15, 179, 179);
+    font-weight: 500;
+    margin-bottom: 15px;
 }
-.single-footer{
+footer .container  h2:before{
+  position: relative;
+  content: '';
+  bottom: -5px;
+  left: 0;
+  height:2px ;
+  width: 50px;
+  background: rgb(62, 3, 201);
+}
+footer p{
+    color: #999;
+
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
     list-style: none;
 }
-.single-footer ul li{
-    margin-bottom: 10px;
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color:#fff;
+    font-size: 20px;
+}
+
+.quicklinks{
     position: relative;
-    padding-left: 20px;
+    width:25%
 }
-.single-footer ul li a{
-    color: #333;
-    text-decoration:navajowhite ;
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% -60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right:10px ;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
     text-align: center;
-    text-transform: capitalize;
+    color: #999;
 }
-.single-footer ul li a i{
-    position: absolute;
-    top: 5px;
-    left:0;
+
+@media (max-width:991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,
+    .quicklinks,
+    .contact{
+        width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
 }
-.single-footer h4{
-    text-transform: capitalize;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-.copy{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top:50px ;
-}
+
+
+// @media (max-width:301px) {
+    
+// }
+
+// ----------------------------------
+
