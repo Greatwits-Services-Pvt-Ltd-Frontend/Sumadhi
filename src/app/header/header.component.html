@@ -2,37 +2,44 @@
 
 
 
+ 
+<div class="pkao">
+<img style="width: 200px;"  src="https://image.shutterstock.com/image-vector/s-brush-stroke-letter-logo-260nw-715074679.jpg" alt="logo" srcset="">
 
-<div class="topnav" id="myTopnav">
-    <a href=""> <img width="200px" src="https://cc-prod.scene7.com/is/image/CCProdAuthor/mascot-logo-design_P1_900x420?$pjpeg$&jpegSize=200&wid=900" alt="" srcset="">
-    </a>
-    <!-- <img width="20px" src="https://cc-prod.scene7.com/is/image/CCProdAuthor/mascot-logo-design_P1_900x420?$pjpeg$&jpegSize=200&wid=900" alt="" srcset=""> -->
-    <a class="new" href="#home" >Home</a>
-    <a class="new" href="#news">About</a>
-    <!-- <a class="new" href="#contact">C</a> -->
-    <div class="dropdown">
-      <button  class="new  dropbtn">Services
-        <i class="fa fa-caret-down"></i>
-      </button>
+<button routerLink="homepage" style="margin-left: 20px;" class="dropbtn">Home</button>
+
+
+  <div class="dropdown">
+      <button class="dropbtn">Solutions</button>
       <div class="dropdown-content">
-        <a href="#">Services 1</a>
-        <a href="#">Services 2</a>
-        <a href="#">Services 3</a>
+        <a href="#">CRM</a>
+        <a href="#">SOLUTIONS 2</a>
+        <a href="#">SOLUTIONS 3</a>
       </div>
-    </div>
-    <div class="dropdown">
-      <button  class="new  dropbtn">Industries
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Industries 1</a>
-        <a href="#">Industries 2</a>
-        <a href="#">Industries 3</a>
-      </div>
-    </div>
-    <a class="new" href="#about">PortFolio</a>
-    <a class="new" href="#about">Contact Us</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
+      
+  <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a routerLink="service1" >Webapp Development</a>
+        <a  routerLink="service2" >Mobile App Development</a>
+        <a routerLink="service3" >Software Product Development</a>
+      </div>
+  </div>
+      
+  <button class="dropbtn">Support</button>
+      
+  <div class="dropdown">
+      <button class="dropbtn">Company</button>
+      <div class="dropdown-content">
+        <a routerLink="aboutus">About Us </a>
+        <a routerLink="contactus">Contact Us</a>
+        <a href="#">Patners</a>
+      </div>
+  </div>
+  
 
-
+  </div>
+  
+  
+  <router-outlet></router-outlet>
