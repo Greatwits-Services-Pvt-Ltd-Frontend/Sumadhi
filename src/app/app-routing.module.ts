@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Service1Component } from './service/service1/service1.component';
 import { Service2Component } from './service/service2/service2.component';
 import { Service3Component } from './service/service3/service3.component';
+import { SupportComponent } from './support/support.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,10 @@ const routes: Routes = [
 {
   component:HomepageComponent,
   path:"homepage"
+},
+{
+  component:SupportComponent,
+  path:"support"
 }
 
 ];

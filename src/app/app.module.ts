@@ -9,6 +9,9 @@ import { ServiceModule } from './service/service.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CompanyModule } from './company/company.module';
+import { SolutionsModule } from './solutions/solutions.module';
+import { FooterModule } from './footer/footer.module';
+import { SupportModule } from './support/support.module';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { CompanyModule } from './company/company.module';
     ServiceModule,
     BrowserAnimationsModule,
     NgbModule,
-    CompanyModule
+    CompanyModule,
+    SolutionsModule,
+    FooterModule,
+    SupportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

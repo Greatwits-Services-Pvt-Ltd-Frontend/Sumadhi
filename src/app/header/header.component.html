@@ -3,7 +3,7 @@
 
 
  
-<div class="pkao">
+<!-- <div class="pkao">
 <img style="width: 200px;"  src="https://image.shutterstock.com/image-vector/s-brush-stroke-letter-logo-260nw-715074679.jpg" alt="logo" srcset="">
 
 <button routerLink="homepage" style="margin-left: 20px;" class="dropbtn">Home</button>
@@ -39,7 +39,69 @@
   </div>
   
 
-  </div>
+  </div> -->
   
+
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SUMADHI</label>
+
+        <ul>
+          <li><a routerLink="homepage"  href="#">Home</a></li>
+          <!-- <li><a href="#">About</a></li> -->
+
+
+          <div class="dropdown">
+            <a href="#" class="dropbtn">SOLUTIONS</a> 
+            <div class="dropdown-content">
+              <a href="#">CRM</a>
+              <a href="#">SOLUTIONS 2</a>
+              <a href="#">SOLUTIONS 3</a>
+            </div>
+        </div>
+      
+
+
+        
+        <div class="dropdown">
+          <!-- <button class="dropbtn">Services</button> -->
+          <a href="#" class="dropbtn">SERVICES</a>
+          <div class="dropdown-content">
+            <a routerLink="service1" >Webapp Development</a>
+            <a  routerLink="service2" >Mobile App Development</a>
+            <a routerLink="service3" >Software Product Development</a>
+          </div>
+        </div>
+        
+        
+        
+        
+            
+        <div class="dropdown">
+          <!-- <button class="dropbtn">Company</button> -->
+          <a href="#" class="dropbtn">COMPANY</a>
+          <div class="dropdown-content">
+            <a routerLink="aboutus">About Us </a>
+            <a routerLink="contactus">Contact Us</a>
+            <!-- <a href="#">Patners</a> -->
+          </div>
+        </div>
+        
+        <li><a routerLink="support">Support</a> </li>
+          
+          <!-- <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li> -->
+        </ul>
+
+
+      </nav>
+  
+
+
+
+
   
   <router-outlet></router-outlet>
