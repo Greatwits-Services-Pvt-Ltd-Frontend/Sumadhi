@@ -7,6 +7,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Service1Component } from './service/service1/service1.component';
 import { Service2Component } from './service/service2/service2.component';
 import { Service3Component } from './service/service3/service3.component';
+import { Solution1Component } from './solutions/solution1/solution1.component';
+import { Solution2Component } from './solutions/solution2/solution2.component';
+import { Solution3Component } from './solutions/solution3/solution3.component';
 import { SupportComponent } from './support/support.component';
 
 
@@ -39,6 +42,18 @@ const routes: Routes = [
 {
   component:SupportComponent,
   path:"support"
+},
+{
+  component:Solution1Component,
+  path:"solution1"
+},
+{
+  component:Solution2Component,
+  path:"solution2"
+},
+{
+  component:Solution3Component,
+  path:"solution3"
 }
 
 ];

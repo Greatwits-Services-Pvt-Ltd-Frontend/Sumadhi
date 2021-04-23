@@ -1,0 +1,28 @@
+
+.paragraph{
+    // border: 2px solid red;
+    width: 60%;
+    height: 500px;
+    margin-top: 20px;
+    float: left;
+      }
+      .content{
+        // border: 2px solid blue;
+        width: 35%;
+        float: right;
+        margin-top: 20px;
+          }
+          .content h1{
+              color: red;
+          }
+@media (max-width:1170px) {
+ .content{
+              flex-direction: column;
+              float: inherit;
+              width: 100%;
+            }
+            
+            .paragraph{
+              width: 100%;
+            }
+          }
